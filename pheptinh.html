@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phép Tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<form action="">
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th colspan="4">Nhập số </th>
+    </tr>
+    <tr>
+        <td colspan="2"><label for="1"></label><input type="number" id="1" name="o1"></td>
+        <td colspan="2"><label for="2"></label><input type="number" id="2" name="o2"></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="PC()">Addtion(+)</button></td>
+        <td><button type="button" onclick="PT()">Subtration(-)</button></td>
+        <td><button type="button" onclick="PN()">Multiplication(x)</button></td>
+        <td><button type="button" onclick="PCC()">Division(/)</button></td>
+    </tr>
+</table>
+</form>
+<script>
+    function PC(){
+        let a
+        a = document.getElementById("1").value
+        let a1 = parseInt(a)
+        let b
+        b = document.getElementById("2").value
+        let b1 = parseInt(b)
+        let c = (a1 + b1)
+        alert("Tổng của 2 số là :" + c)
+    }
+    function PT(){
+        let a
+        a = document.getElementById("1").value
+        let a1 = parseInt(a)
+        let b
+        b = document.getElementById("2").value
+        let b1 = parseInt(b)
+        let c = (a1 - b1)
+        alert("Hiệu của 2 số là :" + c)
+    }
+    function PN(){
+        let a
+        a = document.getElementById("1").value
+        let a1 = parseInt(a)
+        let b
+        b = document.getElementById("2").value
+        let b1 = parseInt(b)
+        let c = (a1 * b1)
+        alert("Tích của 2 số là :" + c)
+    }
+    function PCC(){
+        let a
+        a = document.getElementById("1").value
+        let a1 = parseInt(a)
+        let b
+        b = document.getElementById("2").value
+        let b1 = parseInt(b)
+        let c = (a1 / b1)
+        alert("Thương của 2 số là :" + c)
+    }
+</script>
+</body>
+</html>
