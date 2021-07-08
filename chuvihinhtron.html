@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi hình tròn</title>
+</head>
+<body>
+<label>Nhập r :<input type="number" name="r" id="1"></label>
+<button type="button" onclick="CVr()">Tính Chu Vi</button>
+<br>
+<label>Nhập d :<input type="number" name="d" id="2"></label>
+<button type="button" onclick="CVd()">Tính Chu Vi</button>
+<script>
+    function CVr(){
+        let r
+        r = document.getElementById("1").value
+        let r1 = parseInt(r)
+        let C = (r1*2*3.14)
+        alert("Chu vi hình tròn :" + C)
+    }
+    function CVd(){
+        let d
+        d = document.getElementById("2").value
+        let d1 = parseInt(d)
+        let C1 = (d1*3.14)
+        alert("Chu vi hình tròn :" + C1)
+    }
+</script>
+</body>
+</html>

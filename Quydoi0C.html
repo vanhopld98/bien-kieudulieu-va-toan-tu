@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quy đổi độ C</title>
+</head>
+<form action="">
+    <input type="number" name="doC" id="1">
+    <button type="button" onclick="OC()">Quy Đổi</button>
+</form>
+<body>
+<script>
+    function OC(){
+        let c
+        c = document.getElementById("1").value
+        let c1 = parseInt(c);
+        let F = ((9*c1) / 5 + 32)
+            alert("Độ F =" + F)
+    }
+</script>
+</body>
+</html>

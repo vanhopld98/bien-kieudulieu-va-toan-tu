@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Điểm TB</title>
+</head>
+<body>
+<form action="">
+    <table border="1" style="border-collapse: collapse">
+        <tr>
+            <th colspan="2">Bảng tính điểm trung bình</th>
+        </tr>
+        <tr>
+            <td>Điểm Vật Lý</td>
+            <td><input type="number"id="1" name="diemvl"></td>
+        </tr>
+        <tr>
+            <td>Điểm Hóa</td>
+            <td><input type="number" id="2" name="diemhoa"></td>
+        </tr>
+        <tr>
+            <td>Điểm Sinh</td>
+            <td><input type="number" id="3" name="diemsinh"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="tb()">Tính Tổng</button>
+</form>
+<script>
+    function tb(){
+        let diemvl
+        let diemhoa
+        let diemsinh
+        diemvl = document.getElementById("1").value
+        diemhoa = document.getElementById("2").value
+        diemsinh = document.getElementById("3").value
+        let diemvatly = parseInt(diemvl);
+        let diemhoahoc = parseInt(diemhoa);
+        let diemsinhhoc = parseInt(diemsinh);
+        let tong = (diemvatly + diemhoahoc + diemsinhhoc ) / 3
+        alert("Tổng điểm trung bình của bạn là:" + tong)
+    }
+</script>
+</body>
+</html>
